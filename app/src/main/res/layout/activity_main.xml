@@ -21,6 +21,7 @@
         android:id="@+id/editText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textColorHint="@color/design_default_color_primary"
         android:hint="Entrez votre texte ici"
         android:minHeight="48dp"
         app:layout_constraintBottom_toBottomOf="parent"
