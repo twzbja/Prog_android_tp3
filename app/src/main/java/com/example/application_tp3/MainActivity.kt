@@ -54,7 +54,7 @@ class MainActivity : AppCompatActivity() {
             */
 
 
-            // Fonction du bouton OK
+            // Lambda expression ou Fonction du bouton OK
             buttonOK.setOnClickListener {
                 FileOutputStream(file).use { stream ->
                     // On écrase le contenu le contenu du fichier par le contenu de la zone de saisie
@@ -64,7 +64,7 @@ class MainActivity : AppCompatActivity() {
                 Log.d("Tache","Bouton Ok pressed")
             }
 
-            // Fonction du bouton Cancel
+            // Lambda expression ou  Fonction du bouton Cancel
             buttonCancel.setOnClickListener {
                 // On écrase le contenu de la zone de saisie par le contenu du fichier
                 fileContents = FileInputStream(file).bufferedReader().use { it.readText() }
